@@ -17,9 +17,9 @@ public class SQRServiceTest {
 //    })
     @CsvFileSource(resources = {"/TestData.csv"})
 
-    public void test(int Minvalue, int Maxvalue, int expected) {
+    public void test(int minvalue, int maxvalue, int expected) {
         SQRService service = new SQRService();
-        int result = service.squareNumber(Minvalue, Maxvalue);
+        int result = service.squareNumber(minvalue, maxvalue);
 
         Assertions.assertEquals(expected, result);
     }
